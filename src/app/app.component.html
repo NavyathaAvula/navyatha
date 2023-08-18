@@ -1,0 +1,35 @@
+<!-- <h1>{{title}}</h1>
+<h2 class={{cs}}>navyatha</h2>
+<app-header></app-header>
+<p>{{test()}}</p>
+<img src={{path}}>
+<p>{{d}}</p>
+<h1 [class]="active?'a':'b'">Navyatha</h1>
+<h2 [style.color]="c">good</h2>
+<h1 [style]="mystyle">girl</h1> -->
+<div>
+<p>string interpolation </p>
+<h1>{{a}}</h1>
+<p>property buinding</p>
+<input [value]="a" >
+<p>event buinding</p>
+<button type="button" (click)="test()" >click me</button>
+<p>Two way Buinding</p>
+name:<input [(ngModel)]="a"><br>
+number:<input [(ngModel)]="c">
+</div>
+<div>
+    <p>directives:structural,attribute,component</p>
+    <ng-container *ngIf="c===1">
+    <ul >
+        <li *ngFor="let vara of b">{{vara}}</li>
+    </ul>
+</ng-container>
+</div>
+<p>pipes</p>
+<h3>{{a|uppercase}}</h3>
+<h3>{{a|lowercase}}</h3>
+<h3>{{d}}</h3>
+<app-header></app-header>
+<button routerLink="data">router</button>
+<router-outlet></router-outlet>
